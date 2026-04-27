@@ -1,0 +1,38 @@
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Shop Smart, Live Better</h1>
+    <p>Discover the best products at unbeatable prices</p>
+    <button class="btn-primary">Shop Now</button>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+  <h2>Shop by Category</h2>
+  <div class="category-grid">
+    <div class="category-card" *ngFor="let category of categories">
+      <img [src]="category.image" alt="{{category.name}}">
+      <h3>{{category.name}}</h3>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="products">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    <div class="product-card" *ngFor="let product of products">
+      <img [src]="product.image" alt="{{product.name}}">
+      <h3>{{product.name}}</h3>
+      <p class="price">₹{{product.price}}</p>
+      <button class="btn-secondary">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Get 20% Off Your First Order</h2>
+  <button class="btn-primary" (click)="registerRedirect('/register')">Sign Up Now</button>
+</section>

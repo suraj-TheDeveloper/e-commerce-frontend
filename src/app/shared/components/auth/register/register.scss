@@ -1,0 +1,67 @@
+/* MOBILE FIRST */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f9;
+  padding: 15px;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* ERROR */
+.error {
+  margin-top: 5px;
+  color: red;
+  font-size: 0.8rem;
+}
+
+/* BUTTON */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: #ff6a00;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .register-card {
+    padding: 30px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .register-card {
+    max-width: 450px;
+  }
+}
